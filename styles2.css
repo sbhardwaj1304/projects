@@ -1,0 +1,256 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+
+
+li, a, button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 10%;
+    background-color:#1c2331; ;
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+.nav_links li a:hover{
+   color: #0088a9;
+   
+   /* border: 2px solid white; */
+   
+   /* background-color: aquamarine; */
+    
+}
+button{
+    padding: 5px 10px;
+    background-color:#7c4dff;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(0, 136, 169, 0.7);
+}
+
+.container1 h1{
+    margin: 40px;
+    color: #1c2331;
+    font-size: 50px;
+    text-align: center;
+}
+.descriptionContainer1, .descriptionContainer2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    text-align: justify;
+}
+.descriptionContainer1 p{
+    color: #1c2331;
+    font-size: 16px;
+    margin: 25px;
+    font-weight: 550;
+
+}
+.descriptionContainer2 p{
+    color: #1c2331;
+    font-size: 16px;
+    margin: 25px;
+    font-weight: 550;
+
+}
+.descriptionContainer1 img, .descriptionContainer2 img{
+    margin: 20px;
+    width: 400px;
+    height: 300px;
+}
+.ourStrengths{
+    /* margin: 20px; */
+    padding: 20px;
+    
+    background-color: rgb(196, 225, 251);
+}
+.ourStrengths h1{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: cursive;
+
+}
+.ourStrengths ul {
+    margin-top: 70px;
+}
+.ourStrengths ul li{
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1c2331;
+}
+
+.ourClients{
+    /* margin: 20px 0px; */
+    color: #1c2331;
+    /* padding: 100px; */
+    background-color: #90cfde;
+    padding: 20px;
+
+}
+.ourClients h1{
+    margin-bottom: 150px;
+    font-size: 50px;
+    font-family: cursive;
+    text-align: start;
+}
+
+
+.slick-slider {
+    width: 100%;  /* Full width */
+    margin: auto; /* Center alignment */
+  }
+  
+  .slick-slider img {
+    width: 100px;
+    height: 100px;
+
+    /* max-width: 100%; */
+    display: block;
+    margin: auto;
+  }
+  
+#locationHeading{
+    font-size: 50px;
+    margin: 100px;
+    font-family: cursive;
+}
+.manufacturingLocation1{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+.location1Descrip, .location2Descrip{
+    width: 50vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1c2331;
+    font-size: 22px;
+    font-weight: 550;
+}
+.location1Img, .location2Img{
+    width: 50vw;
+    
+    
+}
+.location1Img img{
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+}
+.manufacturingLocation2{
+    display: flex;
+    flex-direction: row;
+
+    margin: 50px;
+}
+.location2Img img{
+    width: 650px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+}
+.footer{
+    margin-top: 100px;
+    width: 100vw;
+    /* display: flex;
+    align-items: center; */
+}
+
+
+@media screen and (max-width:426px) {
+    .descriptionContainer1, .descriptionContainer2{
+        display: block;
+        /* flex-direction: row; */
+        
+    }
+    .descriptionContainer1 p{
+        color: #1c2331;
+        font-size: 16px;
+        margin: 25px;
+    
+    }
+    .descriptionContainer2 p{
+        color: #1c2331;
+        font-size: 16px;
+        margin: 25px;
+    
+    }
+    .descriptionContainer1 img, .descriptionContainer2 img{
+        margin: 20px;
+        width: 350px;
+        height: 350px;
+    }
+    
+    #locationHeading{
+        font-size: 40px;
+        /* margin: 100px; */
+    }
+
+    .location1Img, .location2Img{
+        width: fit-content;
+    }
+
+    .location1Img img{
+        width: 350px;
+        height: 300px;
+        display: block;
+    }
+    .manufacturingLocation1{
+        display: block;
+        /* flex-direction: row; */
+    
+        margin: 50px;
+    }
+
+    .location1Descrip, .location2Descrip{
+      
+        color: #1c2331;
+        font-size: 16px;
+    }
+
+    .manufacturingLocation2{
+        display: block;
+    }
+
+    .location2Img img{
+        width: 400px;
+        height: 350px;
+        display: block;
+    }
+}
+
+    
